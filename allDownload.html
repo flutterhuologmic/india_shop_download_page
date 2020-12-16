@@ -9,27 +9,27 @@
   <link href="./assets/index.css" rel="stylesheet" />
    <script type="text/javascript" src="//www.shareinstall.com.cn/js/page/jshareinstall.min.js"></script>
   <script type="text/javascript">
-    function getQueryVariable(variable){
-      var query = window.location.search.substring(1);
-      var vars = query.split("&");
-      for (var i=0;i<vars.length;i++) {
-        var pair = vars[i].split("=");
-        if(pair[0] == variable){return pair[1];}
-      }
-      return(false);
-    }
-   var data = ShareInstall.parseUrlParams(); // shareinstall.js中提供的工具函数，解析url中的所有查询参数
-   new ShareInstall({
-        appKey: 'A2B2H7B2AERH62',
-        onready : function() {
-            // shareinstall successful
-            var m = this, button = document.getElementById("downloadButton");
-            button.style.visibility = "visible";
-            button.onclick = function() {
-               m.wakeupOrInstall();
-            }
-        }
-    }, data);
+    // function getQueryVariable(variable){
+   //    var query = window.location.search.substring(1);
+   //    var vars = query.split("&");
+   //    for (var i=0;i<vars.length;i++) {
+   //      var pair = vars[i].split("=");
+   //      if(pair[0] == variable){return pair[1];}
+   //    }
+   //    return(false);
+   //  }
+   // var data = ShareInstall.parseUrlParams(); 
+   // new ShareInstall({
+   //      appKey: 'A2B2H7B2AERH62',
+   //      onready : function() {
+   //          // shareinstall successful
+   //          var m = this, button = document.getElementById("downloadButton");
+   //          button.style.visibility = "visible";
+   //          button.onclick = function() {
+   //             m.wakeupOrInstall();
+   //          }
+   //      }
+   //  }, data);
   </script>
 </head>
 <body>
@@ -42,7 +42,7 @@
       </ul>
     </section>
     <section style="width:10.6rem; margin: 0.6rem auto 0;">
-      <button id="downloadButton" class="download" style="visibility: visible;">Download</button>
+      <button onclick="downBtn()" class="download" style="visibility: visible;">Download</button>
     </section>
     <section class="botmCont">
       <a href="http://www.shipu18.com/" target="_blank">go to website</a>
