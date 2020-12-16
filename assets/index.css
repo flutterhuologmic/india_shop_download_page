@@ -1,0 +1,69 @@
+*{
+  padding:0;
+  margin:0
+}
+ul,li{
+  list-style: none;
+}
+html{
+  font-size: 0.14rem;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.swiper-container{
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.logoImg img{
+  width: 3.92rem;
+}
+img{
+  display: inline-block;
+}
+.botmCont a{
+  font-size: 0.54rem;
+  color: #2A66F0;
+}
+.botmCont a:link{
+  text-decoration: none;
+}
+.botmCont p{
+  font-size: 0.42rem;
+  color: #000;
+  margin-top: 1.4rem;
+}
+.botmList img{
+  width: 8rem;
+}
+.botmCont{
+  background: linear-gradient(0deg, rgba(0, 150, 239, 0.15), rgba(0, 190, 245, 0));
+}
+.botmList{
+  padding: 1.4rem 0.9rem;
+}
+.botmList li{
+  margin-bottom: 0.9rem;
+}
+.botmList p{
+  font-size: 0.48rem;
+  margin: 0.9rem;
+  text-align: left;
+}
+.botmList p span{
+  font-weight: bold;
+}
+.download{
+  background: url("../images/downBtn.png") center no-repeat;
+  background-size: 100% auto;
+  width: 11.17rem;
+  height: 2.17rem;
+  line-height: 2rem;
+  outline: none;
+  border: none;
+  font-size: 0.6rem;
+  color: #fff;
+}
